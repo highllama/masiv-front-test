@@ -1,0 +1,30 @@
+.ComicContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3em;
+
+  &__main {
+    
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    
+    h2 {
+      text-align: center;
+      font-family: "Poppins", Tahoma, Geneva, Verdana, sans-serif;
+      color: #FFF;
+      margin-bottom: 1em;
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+  .ComicContainer{
+    img{
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}

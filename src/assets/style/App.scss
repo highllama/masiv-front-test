@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(65deg, #1b9cf6, #31dec0);
+}
+
+.button {
+  border-radius: 35px;
+  background: linear-gradient(#81ee8e, #00cafd);
+  outline: none;
+  border: 1px solid transparent;
+  padding: 0.7em;
+  color: #fff;
+  font-family: "Poppins", "Tahoma";
+  font-weight: bold;
+  box-shadow: 0 0 25px 5px rgba(0,0,0,.2) ;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}

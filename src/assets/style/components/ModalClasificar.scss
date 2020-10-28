@@ -1,0 +1,69 @@
+.ModalClasificar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+  animation: slide 0.8s ease;
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 35px;
+    z-index: 10;
+    width: calc(100vw - 60%);
+    height: calc(100vh - 30%);
+    background-color: white;
+    padding: 2em;
+
+    textarea{
+      width: 100%;
+    }
+
+    h2 {
+      color: black;
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      button {
+        border: none;
+        width: 40px;
+        height: 40px;
+        margin-top: -1em;
+        margin-left: 0;
+      }
+    }
+    label {
+      font-family: "poppins";
+      font-size: 2em;
+      color: green;
+    }
+  }
+}
+
+@media screen and (max-width:768px ){
+  .ModalClasificar {
+    &__main{
+      width: 90vw;
+      height: 80vh;
+    }
+  }
+}
+
+@keyframes slide {
+  from {
+    top: -250em;
+  }
+  to {
+    top: 0;
+  }
+}
