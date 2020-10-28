@@ -8,7 +8,6 @@ import { getComic } from "../redux/comicsDuck";
 import { useDispatch, useSelector } from "react-redux";
 
 const ComicContainer = () => {
-  
   const dispatch = useDispatch();
   const comic = useSelector((store) => store.comics.data);
 
